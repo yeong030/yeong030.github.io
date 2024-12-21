@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas</title>
+    <link href="contentCSS.css" type="text/css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="Title"></div>
+            <span id="d-day"></span>
+            <script src="mainjs.js"></script>
+    </header>
+    
+    <nav>
+        <ul>
+            <li> <a href="#origin">크리스마스에 대해</a>
+            <li> <a href="#song">크리스마스 추천템</a>
+            <li> <a href="#quiz">퀴즈</a>
+        </ul>
+    </nav>
+
+<section>
+    <article id="origin">
+    <h1>크리스마스에 대해</h1>
+    <ul style="list-style-type: square;">
+        <li>크리스마스란?</li>
+        <dl>
+            <dt>크리스마스란?</dt>
+            <dd>        
+                <strong>크리스마스는 그리스도(Christ)와 가톨릭의 예배 의식인 미사(mass)의 합성어이다.</strong>
+                서양에서 시작된 크리스마스는 12월 24일부터 1월 6일까지 예수의 성탄을 축하하는 절기다.
+                4세기 당시 사람들이 그리스도의 수난 날짜인 3월 25일을 천사 가브리엘이 마리아를 찾아와서 예수의
+                탄생을 알렸다는 성령으로 내려온 날, 즉 수태고지일로 보고 그로부터 상징적인 
+                9개월간의 잉태 이후인 12월 25일을 탄생일로 지키는 그리스도론을 바탕으로 한다.
+            </dd> 
+            <dt>산타클로스</dt>
+            <dd><em>아이들에게 선물을 주는 산타클로스는 선행으로 유명한 ‘성 니콜라오’로부터 기원한 것으로 알려져 있다.</em>
+                12세기 프랑스의 수녀들이 성 니콜라오 축일 전날인 12월 5일 가난한 아이들에게 선물을 주기 시작한 것에서 유래했다고 하며, 
+                유럽의 로마가톨릭 국가들에서는 성인의 축일인 12월 6일에 가족 중 한 명이 
+                성 니콜라오의 분장을 하고 나타나 착한 어린이를 칭찬하는 전통이 있었다.</dd>
+    
+            <dt>캐롤</dt>
+            <dd>크리스마스 캐럴은 캐럴의 한 종류로, 크리스마스에 야외에서 신을 찬송하기 위해 부르는 
+                민중적 종교가로 14세기 영국에서 유래됐다.
+                <mark>캐롤은 원래 민중이 야외에서 함께 노래하는 즐거운 성격의 종교적인 노래였다.</mark></dd>
+        </dl>
+
+        <li>그거 아세요?</li>
+        <ol type="1">
+            <li>크리스마스는 1945년 해방을 맞으며 미군정에 의해 크리스마스가 처음으로 공휴일이 되었다.</li>
+            <li>크리스마스 트리 문화는 독일에서 시작되었다.</li>
+            <li>성탄절 풍습이 스트레스를 해소하고, 신경을 활성화하는 등 건강 측면에서 삶의 활력소가 되고 있다는 연구 결과가 밝혀졌다. </li>
+        </ol> <br>
+        <img src="Wmage/santa.png" alt="Santa" width="200px" height="200px">
+    </ul>
+    </article>
+    <hr>
+
+    <article id="song">
+    <h1>크리스마스 캐롤 & 영화 & 선물 추천</h1>
+    <p>
+    <select id="myOption">
+        <option value="carol">캐롤</option>
+        <option value="movie">영화</option>
+        <option value="present">선물</option>
+    </select> <br>
+<input type="button" value="추천" onClick="getSelect()">
+<h2 id="result"></h2>
+</p>
+
+    <script>
+        function getSelect() {
+            const index = document.getElementById("myOption").selectedIndex;
+            const value = document.getElementById("myOption").options[index].value;
+            const resultElement = document.getElementById("result");
+        
+            switch (value) {
+                case "carol":
+                    resultElement.innerHTML = 
+                    "Must Have Love, Wishful Winter, 첫눈"
+                    break;
+                case "movie":
+                    resultElement.innerHTML = 
+                    "나홀로집에, 러브 액추얼리, 폴라 익스프레스";
+                    break;
+                case "present":
+                    resultElement.innerHTML = 
+                    "곰인형, 책, 목도리";
+                    break;
+                default:
+                    resultElement.innerHTML = "";
+            }
+        }
+    </script>
+    </article>
+
+    <hr>
+    <article id="quiz">
+    <h1>크리스마스 퀴즈 풀기</h1> <br>
+    <h1>퀴즈</h1>
+    <script src="Christmastest.js"></script>
+    <form id="quizForm">
+        <div>
+            <p>1.영국에서 크리스마스 축제가 금지된 적이 있었다?</p>
+            <label><input type="radio" name="pop1" value="yes">O</label><br>
+            <label><input type="radio" name="pop1" value="no">X</label><br>
+        </div>
+
+        <div>
+            <p>2. 전 세계에서 가장 많이 울려퍼진 캐롤은?</p>
+            <label><input type="radio" name="pop2" value="LS"> Last Christmas</label><br>
+            <label><input type="radio" name="pop2" value="AC"> All I Want For Christmas Is You</label><br>
+            <label><input type="radio" name="pop2" value="ST"> Santa Tell Me</label><br>
+        </div>
+
+        <div>
+            <p>3. 크리스마스 트리 문화가 시작된 국가는?</p>
+            <label><input type="radio" name="pop3" value="G"> Germany</label><br>
+            <label><input type="radio" name="pop3" value="F"> France</label><br>
+            <label><input type="radio" name="pop3" value="E"> English</label><br>
+        </div>
+        <br>
+        <button type="button" onclick="Christmastest()">퀴즈 제출</button>
+    </form>
+
+    </article>
+</section>
+
+    <aside>
+        <a href="https://www.youtube.com/watch?v=a_80o2lDYec" target="_blank" style="text-decoration: none;">
+        <h1><mark>캐롤 플레이리스트</mark></h1>
+    </aside>
+
+    <div id="post">
+        <h3>방명록 남기기</h3>
+        <textarea cols="15" rows="5"></textarea>
+        크리스마스 소원을 말해봐 <br>
+        <button type="submit">소원을 이뤄줄게!</button>
+    </div>
+</body>
+</html>

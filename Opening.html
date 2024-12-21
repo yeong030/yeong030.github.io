@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opening</title>
+    <style>
+        @import url(mainCSS.css);
+    </style>
+            <script>
+                function checkPassword() {
+                    const password = prompt("안녕하세요, 암호를 말해주세요!", "크리스마스 한국어나 영어로!");
+                    if (password === "Christmas" || password === "크리스마스") {
+                        alert("어서오세요!");
+                    } else {
+                        alert("틀렸습니다.");
+                        checkPassword();
+                    }
+                }
+
+
+    function linktree() {
+        const div = document.getElementById("girl");
+        if (div.style.color === "black") {
+            div.style.color = "white"; // 글자색 반전
+        } else {
+            div.style.color = "black"; // 원래 색으로 복구
+        }
+        window.location.href = "https://colormytree.me/2024/01JFMP0C3SFPDYZ66C9MR48249";
+    }
+    </script>
+
+
+</head>
+<body onload="checkPassword()">
+    
+    <header>
+    </header>
+
+        <nav>
+            <div id="tree1"><h1 title="여기가 공식 홈페이지입니다!"><a href="Christmas.html" style="text-decoration: double; color:aquamarine;"><mark>크리스마스를 보내는 방법</mark></a></h1></div>
+            <div id="cookie1"><h1><a href="duu.html" style="text-decoration: none; color:rgb(243, 106, 158);"><mark>서프라이즈 선물</mark></a></h1></div>
+            <div id="girl" onclick="linktree()"><h1 title="크리스마스 계획을 공유해봐요!"><mark>트리를 꾸며줘</mark></h1></div>
+        </nav>
+
+    <footer>
+        <h2>202400801 오영경</h2>
+        <p>2024 크리스마스 소개 웹사이트
+            <pre> 문의 하시려구요? 
+                이쪽.... 입니다
+                    이메일: yeonggyeongo1029@naver.com
+        </p>
+    </footer>
+
+
+</body>
+</html>

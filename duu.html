@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise</title>
+    <style>
+    body {
+        text-align: center; /* 중앙 정렬 */
+        }
+    img {
+        margin-top: 100px;
+        width: 25%; 
+    }
+    img:hover {
+        transform: scale(1.4); 
+    }
+</style>
+<script>
+function over(obj) {
+obj.src="Wmage/happy.png";
+}
+function out(obj) {
+obj.src="Wmage/duu.png";
+}
+</script>
+</head>
+
+<body>
+<h4>듀가나디를 눌러보세요~</h4> <hr>
+<img src="Wmage/duu.png" alt="이미지" 
+onmouseover="over(this)"
+onmouseout="out(this)">
+</body>
+</html>

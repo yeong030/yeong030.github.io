@@ -1,0 +1,115 @@
+    #Title {
+        position: absolute;
+        background-image: url(Wmage/TT.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center; /* 이미지를 중앙에 배치 */
+        width: 300px; /* 네모 상자의 너비 */
+        height: 200px; 
+        }
+
+    #d-day {
+        position: absolute;
+        width: 500px;
+        background-color: #225a39;
+        color: snow;
+        margin-left: 350px; 
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    nav {
+        position: absolute;
+        top: 170px; /* section 바로 위에 위치 */
+        left: 300px;
+        width: 1300px; /* section과 동일한 너비 */
+        text-align: center;
+        background-color: #aaef93;
+        display: flex;
+        border: 10px solid rgb(255, 255, 255);
+        border-radius: 10px;
+    }
+
+    nav ul li {
+        display: inline;
+    }
+
+    nav a {
+        margin: 0 15px; /* 링크 간격 */
+        text-decoration: none; /* 밑줄 제거 */
+        color: #000000; /* 링크 색상 */
+    }
+
+    nav ul li a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+        background-color: #ffee6f
+    }
+
+
+    section {
+        position: absolute;
+        top: 250px;
+        left: 300px;
+        width: 1250px;
+        background-color: #ffffff;
+        border: 15px solid #e15046;
+        border-radius: 20px;
+        margin-right: 350px;
+        padding: 20px; /* 내용과 테두리 간격 */
+    }
+
+    h1 {
+        font-style: italic;
+    }
+
+    dt {
+        font-size: 20px;
+        color: #081e0d;
+        text-decoration: underline;
+    }
+
+    .smalltext{
+    background-color: navy;
+    color: white;
+    margin-right: 30%;
+    }
+
+    aside {
+        position: fixed;
+        width: 250px; 
+        height: 250px;
+        padding: 10px; 
+        border-radius: 10px;
+        margin-top: 200px;
+        margin-left:30px;
+        background-image: url(Wmage/music.png);
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+
+    #post {
+        margin-top: 550px;
+        margin-right: 10px;
+        position: absolute;
+        top: 30px;
+        right: 30px; 
+        width: 150px; 
+        height: 250px; 
+        background-color: #ec7dab;
+        color: white;
+        padding: 10px; 
+        border-radius: 10px;
+    }
+
+body {
+    background-image: url(Wmage/background.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
