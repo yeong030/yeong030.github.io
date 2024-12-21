@@ -75,12 +75,6 @@
         text-decoration: underline;
     }
 
-    .smalltext{
-    background-color: navy;
-    color: white;
-    margin-right: 30%;
-    }
-
     aside {
         position: fixed;
         width: 250px; 
